@@ -1,0 +1,22 @@
+.section {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 10px;
+}
+.buttonForm {
+    color: aliceblue;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #2196F3;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}

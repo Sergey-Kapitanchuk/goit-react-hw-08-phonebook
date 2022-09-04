@@ -1,0 +1,13 @@
+.button {
+    color: aliceblue;
+    font-weight: 700;
+    padding: 5px 10px;
+    background-color: #2196F3;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text{
+    font-weight: 900;
+}
