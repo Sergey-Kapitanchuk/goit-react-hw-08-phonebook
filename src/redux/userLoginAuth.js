@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const userFetch = createApi({
-    reducerPath: 'userApi',
+    reducerPath: 'userFetch',
     baseQuery: fetchBaseQuery({
         baseUrl: 'https://connections-api.herokuapp.com',
         prepareHeaders: (headers, { getState }) => {

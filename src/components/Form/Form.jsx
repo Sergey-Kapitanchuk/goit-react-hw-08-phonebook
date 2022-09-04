@@ -9,7 +9,7 @@ export function Form() {
   const [contactName, setContactName] = useState('');
   const [contactNumber, setContactNumber] = useState('');
 
-  const { data: contacts } = useFetchContactsQuery();
+  const { data } = useFetchContactsQuery();
   const [addContact] = useAddContactsMutation();
 
   const nameInputChange = e => {
@@ -23,15 +23,15 @@ export function Form() {
     e.preventDefault();
 
     if (
-      contacts.some(
+      data.some(
         contact => contact.name.toLowerCase() === contactName.toLowerCase(),
       )
     ) {
-      toast.error(`$contactName} is already in contacts!`);
+      toast.error(`${contactName} is already in contacts!`);
       return;
     }
 
-    addContact({ name: contactName, phone: contactNumber });
+    addContact({ name: contactName, number: contactNumber });
     toast.success(`${contactName} was added to your contacts!`);
 
     setContactName('');

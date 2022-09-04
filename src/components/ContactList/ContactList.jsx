@@ -24,7 +24,7 @@ export const ContactList = ({ filter }) => {
                 contacts && (
                     <ul className={CSS.contact}>
                         {getVisibleContacts().map(contact =>
-                            <li key={contact.id} className={CSS.contactList}><p>{contact.name}: {contact.phone}</p>
+                            <li key={contact.id} className={CSS.contactList}><p>{contact.name}: {contact.number}</p>
                                 <button type="button" onClick={() => onDelete(contact.id)} className={CSS.contactButton}>Delete</button>
                             </li>
                         )}

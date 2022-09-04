@@ -10,5 +10,11 @@ margin-top: -10px;
 .contactButton{
     padding: 5px 15px;
     margin-left: 20px;
-    /* height: 20px; */
+    color: aliceblue;
+        font-weight: 700;
+        margin-top: 10px;
+        background-color: #2196F3;
+        border: 1px solid;
+        border-radius: 5px;
+        cursor: pointer;
 }
